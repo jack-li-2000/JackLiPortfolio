@@ -194,9 +194,6 @@
           </div>
         </div>
       </div>
-      <div class="mt-8 pt-8 border-t border-gray-800 text-center md:text-left">
-        <p class="text-gray-500">© {new Date().getFullYear()} Jack Li. All rights reserved.</p>
-      </div>
     </div>
   </footer>
 </div>
