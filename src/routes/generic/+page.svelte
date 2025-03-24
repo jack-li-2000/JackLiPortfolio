@@ -1,5 +1,5 @@
 <script>
-  // Add any needed script logic for the About page here
+  import { base } from '$app/paths';
 </script>
 
 <div class="min-h-screen bg-gray-900 text-gray-100">
@@ -23,11 +23,11 @@
   <nav class="backdrop-blur-md bg-gray-900/80 sticky top-0 z-10 border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center py-4">
-        <a href="/" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Data Analyst</a>
+        <a href="{base}/" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Data Analyst</a>
         <div class="flex space-x-6">
-          <a href="/" class="font-semibold text-gray-300 hover:text-purple-400 transition-colors">Projects</a>
-          <a href="/generic" class="font-semibold text-purple-400 transition-colors">About me</a>
-          <a href="/Jack_li_resume.pdf" target="_blank" class="font-semibold text-gray-300 hover:text-purple-400 transition-colors">Resume</a>
+          <a href="{base}/" class="font-semibold text-gray-300 hover:text-purple-400 transition-colors">Projects</a>
+          <a href="{base}/generic" class="font-semibold text-purple-400 transition-colors">About me</a>
+          <a href="{base}/Jack_li_resume.pdf" target="_blank" class="font-semibold text-gray-300 hover:text-purple-400 transition-colors">Resume</a>
         </div>
         <div class="flex space-x-4">
           <a href="https://www.linkedin.com/in/jack-li-2000/" target="_blank" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="LinkedIn Profile">

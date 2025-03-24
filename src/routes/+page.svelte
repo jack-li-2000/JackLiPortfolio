@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   // Project data from the original HTML
   const featuredProject = {
     title: "Toronto AirBNB Popularity Insights Dashboard",
@@ -62,8 +63,8 @@
       <h1 class="text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Jack Li</h1>
       <p class="text-2xl mb-8 text-gray-200">Skilled in analytics, dashboards, statistics, machine learning, forecasting, and more.</p>
       <div class="flex justify-center space-x-4 mt-6">
-        <a href="#projects" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-all shadow-lg hover:shadow-purple-500/30">View Projects</a>
-        <a href="/generic" class="border border-white/30 backdrop-blur-sm bg-white/10 text-white px-6 py-3 rounded-lg font-medium hover:bg-white/20 transition-all">About Me</a>
+        <a href="{base}/#projects" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-all shadow-lg hover:shadow-purple-500/30">View Projects</a>
+        <a href="{base}/generic" class="border border-white/30 backdrop-blur-sm bg-white/10 text-white px-6 py-3 rounded-lg font-medium hover:bg-white/20 transition-all">About Me</a>
       </div>
       <div class="animate-bounce mt-16">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -77,11 +78,11 @@
   <nav class="backdrop-blur-md bg-gray-900/80 sticky top-0 z-10 border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center py-4">
-        <a href="/" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Data Analyst</a>
+        <a href="{base}/" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Data Analyst</a>
         <div class="flex space-x-6">
-          <a href="#projects" class="font-semibold text-gray-300 hover:text-purple-400 transition-colors">Projects</a>
-          <a href="/generic" class="font-semibold text-gray-300 hover:text-purple-400 transition-colors">About me</a>
-          <a href="/Jack_li_resume.pdf" target="_blank" class="font-semibold text-gray-300 hover:text-purple-400 transition-colors">Resume</a>
+          <a href="{base}/#projects" class="font-semibold text-gray-300 hover:text-purple-400 transition-colors">Projects</a>
+          <a href="{base}/generic" class="font-semibold text-gray-300 hover:text-purple-400 transition-colors">About me</a>
+          <a href="{base}/Jack_li_resume.pdf" target="_blank" class="font-semibold text-gray-300 hover:text-purple-400 transition-colors">Resume</a>
         </div>
         <div class="flex space-x-4">
           <a href="https://www.linkedin.com/in/jack-li-2000/" target="_blank" class="text-gray-400 hover:text-purple-400 transition-colors" aria-label="LinkedIn Profile">
