@@ -3,7 +3,7 @@
   // Project data from the original HTML
   const featuredProject = {
     title: "Toronto AirBNB Popularity Insights Dashboard",
-    image: "/images/airbnb2023.png",
+    image: `${base}/images/airbnb2023.png`,
     description: "An interactive map and dashboard of AirBNB in Toronto providing insights towards popularity in features like number of bedrooms, median price per bed, popular neighbourhoods, number accommodated, price over time, and AirBNB room type. Analysis and data cleaning performed in Python and imported to Tableau to deliver insights and display final visualizations.",
     url: "https://public.tableau.com/app/profile/jack.li2849/viz/TorontoAirBNBFrequencyPriceDashboard/Dashboard1"
   };
@@ -11,37 +11,37 @@
   const projects = [
     {
       title: "Global COVID-19 Visualization",
-      image: "/images/covid_tableau.png",
+      image: `${base}/images/covid_tableau.png`,
       description: "A global analysis of COVID-19 infection rate vs mortality rate, vaccination rate vs mortality rate, vaccination rate vs infection rate, etc. Data cleaned and initially explored in MS SQL",
       url: "https://public.tableau.com/app/profile/jack.li2849/viz/CovidGlobalInfectionAnalysis/Dashboard1"
     },
     {
       title: "Bike Sales Analysis and Visualizations",
-      image: "/images/excel_bike.png",
+      image: `${base}/images/excel_bike.png`,
       description: "An analysis of bike purchases in Microsoft Excel. This project features bike purchase analysis in North America and Europe with features including marital status, income, children, age bracket, etc.",
       url: "https://1drv.ms/x/s!AuAwC-uA0Qvejw6JYu21H3PxdCA5?e=zYwsce"
     },
     {
       title: "COVID-19 Data Analysis",
-      image: "/images/covid_sql.png",
+      image: `${base}/images/covid_sql.png`,
       description: "Exploratory data analysis of Covid-19 Dataset in MS SQL Server. Findings include infection rate, mortality rate, total cases by country and continent, vaccination rate, and vaccination survival percentage. Also prepared data for use in Tableau Covid visualization project.",
       url: "https://github.com/jack-li-2000/covid_analysis_protfolio_project"
     },
     {
       title: "Film Industry Analysis",
-      image: "/images/heatmap.png",
+      image: `${base}/images/heatmap.png`,
       description: "An analysis of the film industry using python and jupyter notebook. A look at different features scraped from the IMDb website. Performing data cleaning and organization, exploring the dataset, and looking at correlations between features and gross earnings of movies.",
       url: "https://github.com/jack-li-2000/movies_python_correlation_portfolio_project"
     },
     {
       title: "Wordnet vs SPP Significance Testing",
-      image: "/images/wordnet.png",
+      image: `${base}/images/wordnet.png`,
       description: "Determine if similarity in the NLP datastructure Wordnet is correlated to similarity of word relations in humans. Wordnet was originally developed to model similarity structures in humans but has evolved since its adoption in the natural language processing space. We attempt to determine if it still functions in its original purpose.",
       url: "https://github.com/jack-li-2000/wordnet_SPP_significance_testing"
     },
     {
       title: "All Analysis Portfolio Projects",
-      image: "/images/blur.png",
+      image: `${base}/images/blur.png`,
       description: "Check out all my Python, SQL, Excel, PowerBI, and Tableau analyses and data science projects on Github! (A link to my tableau profile can be found in the bio)",
       url: "https://github.com/jack-li-2000?tab=repositories"
     }

@@ -59,9 +59,9 @@
         
         <!-- Photos -->
         <div class="flex flex-col md:flex-row gap-4 justify-center mb-8">
-          <img src="/images/capy.jpg" alt="Personal photo" class="w-full md:w-1/3 rounded-lg shadow-lg border border-gray-700" />
-          <img src="/images/polaroid.jpg" alt="Personal photo" class="w-full md:w-1/3 rounded-lg shadow-lg border border-gray-700" />
-          <img src="/images/eating.jpg" alt="Personal photo" class="w-full md:w-1/3 rounded-lg shadow-lg border border-gray-700" />
+          <img src="{base}/images/capy.jpg" alt="Personal photo" class="w-full md:w-1/3 rounded-lg shadow-lg border border-gray-700" />
+          <img src="{base}/images/polaroid.jpg" alt="Personal photo" class="w-full md:w-1/3 rounded-lg shadow-lg border border-gray-700" />
+          <img src="{base}/images/eating.jpg" alt="Personal photo" class="w-full md:w-1/3 rounded-lg shadow-lg border border-gray-700" />
         </div>
         
         <p class="text-gray-300 mb-4">
@@ -89,7 +89,7 @@
         <!-- Teck Resources -->
         <div class="mb-10">
           <div class="flex flex-col items-center mb-6">
-            <img src="/images/teck.jpg" alt="Teck Resources Logo" class="max-w-xs rounded-lg shadow-lg border border-gray-700" />
+            <img src="{base}/images/teck.jpg" alt="Teck Resources Logo" class="max-w-xs rounded-lg shadow-lg border border-gray-700" />
           </div>
           
           <h3 class="text-xl font-bold mb-1 text-white">Data Science intern @ Race21 / Teck Resources</h3>
