@@ -85,14 +85,29 @@
       <!-- Experience Section -->
       <div class="mb-12">
         <h2 class="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Experience</h2>
+        <!-- UofT -->
+        <div>
+          <h3 class="text-xl font-bold mb-1 text-white">Data Analyst @ OneDataTree</h3>
+          <p class="text-gray-400 mb-4">(2024 – Present, Toronto ON)</p>
+
+          <p class="text-gray-300 mb-4">
+            As a Data Analyst at OneDataTree, I specialize in developing forecasting models, streamline reporting processes, and create data-driven tools to enhance efficiency and insights.
+          </p>
+          
+          <ul class="list-disc pl-6 mb-4 text-gray-300">
+            <li>Developed dashboard automation pipeline for data ingestion, processing, and reporting in SQL and Python.</li>
+            <li>Implemented cross-database validation report to maintain data accuracy and reliability between internal and client records in SQL, Python, and Excel.</li>
+            <li>Conducted financial predictive forecasting, classification, and ad hoc analytics.</li>
+          </ul>
+        </div>
         
         <!-- Teck Resources -->
         <div class="mb-10">
-          <div class="flex flex-col items-center mb-6">
+          <!-- <div class="flex flex-col items-center mb-6">
             <img src="{base}/images/teck.jpg" alt="Teck Resources Logo" class="max-w-xs rounded-lg shadow-lg border border-gray-700" />
-          </div>
+          </div> -->
           
-          <h3 class="text-xl font-bold mb-1 text-white">Data Science intern @ Race21 / Teck Resources</h3>
+          <h3 class="text-xl font-bold mb-1 text-white">Data Science Intern @ Teck Resources</h3>
           <p class="text-gray-400 mb-4">(2021 – 2022, Vancouver BC)</p>
           
           <p class="text-gray-300 mb-4">
@@ -117,18 +132,6 @@
               <li>Displayed insights with analytics dashboards and visualizations in PowerBI.</li>
             </ul>
           </div>
-        </div>
-        
-        <!-- UofT -->
-        <div>
-          <h3 class="text-xl font-bold mb-1 text-white">Statistics Tutor @ UofT</h3>
-          <p class="text-gray-400 mb-4">(2019 – 2021, Toronto ON)</p>
-          
-          <ul class="list-disc pl-6 mb-4 text-gray-300">
-            <li>Conveyed complex statistics topics in intuitive and clear ways.</li>
-            <li>Provided visualizations to explain probability distributions, hypothesis testing, data modelling.</li>
-            <li>Students achieved 30% increase in subsequent exam scores after sessions.</li>
-          </ul>
         </div>
       </div>
       
