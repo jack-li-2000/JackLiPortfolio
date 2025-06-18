@@ -183,10 +183,6 @@
         <div class="mb-6 md:mb-0">
           <h3 class="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Contact</h3>
           <div class="mb-4">
-            <p class="text-gray-400 mb-1">Address</p>
-            <p class="text-white">Downtown Toronto, ON Canada</p>
-          </div>
-          <div>
             <p class="text-gray-400 mb-1">Email</p>
             <p class="text-white">Jack.li.2000@outlook.com</p>
           </div>
