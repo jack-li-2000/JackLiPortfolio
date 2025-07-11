@@ -150,7 +150,7 @@
           <div class="bg-gray-700 p-3 rounded-lg text-center border border-gray-600 hover:border-purple-500 transition-colors">Statistics</div>
           <div class="bg-gray-700 p-3 rounded-lg text-center border border-gray-600 hover:border-purple-500 transition-colors">Machine Learning</div>
           <div class="bg-gray-700 p-3 rounded-lg text-center border border-gray-600 hover:border-purple-500 transition-colors">Forecasting</div>
-          <div class="bg-gray-700 p-3 rounded-lg text-center border border-gray-600 hover:border-purple-500 transition-colors">Communication</div>
+          <div class="bg-gray-700 p-3 rounded-lg text-center border border-gray-600 hover:border-purple-500 transition-colors">Communcation</div>
         </div>
       </div>
       
@@ -161,17 +161,6 @@
           <h3 class="text-xl font-bold text-white">University of Toronto</h3>
           <p class="text-gray-300">Honours Bachelor of Science - Statistics and Computational Cognitive Sciences</p>
         </div>
-      </div>
-      
-      <!-- Contact Section -->
-      <div>
-        <h2 class="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Contact</h2>
-        <p class="text-gray-300 mb-2">
-          <span class="font-semibold text-white">Location:</span> Downtown Toronto, ON Canada
-        </p>
-        <p class="text-gray-300">
-          <span class="font-semibold text-white">Email:</span> Jack.li.2000@outlook.com
-        </p>
       </div>
     </div>
   </section>
