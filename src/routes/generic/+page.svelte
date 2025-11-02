@@ -124,7 +124,7 @@
             <img src="{base}/images/teck.jpg" alt="Teck Resources Logo" class="max-w-xs rounded-lg shadow-lg border border-gray-700" />
           </div> -->
           
-          <h3 class="text-xl font-bold mb-1 text-white">Data Science Intern @ Teck Resources</h3>
+          <h3 class="text-xl font-bold mb-1 text-white">Data Scientist @ Teck Resources</h3>
           <p class="text-gray-400 mb-4">(08/2021 – 06/2022)</p>
           
           <p class="text-gray-300 mb-4">
@@ -133,7 +133,6 @@
           </p>
           
           <div class="mb-6">
-            <h4 class="font-semibold italic mb-2 text-purple-300">Machine Failure Classification</h4>
             <ul class="list-disc pl-6 mb-4 text-gray-300">
               <li>Performed data cleaning, conveyed statistical inferences, and conducted exploratory analysis with Python and SQL, resulting in a 22% reduction in daily reporting time commitment.</li>
               <li>Retrieved relevant features for classification using ElasticNet feature selection, improving model precision and reducing overfitting, leading to 16% increase in detection rate.</li>
@@ -167,7 +166,7 @@
         <h2 class="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Education</h2>
         <div class="mb-4">
           <h3 class="text-xl font-bold text-white">University of Toronto</h3>
-          <p class="text-gray-300">Honours Bachelor of Science - Statistics and Computational Cognitive Sciences</p>
+          <p class="text-gray-300">Honors Bachelor of Science - Statistics and Computational Cognitive Sciences</p>
         </div>
       </div>
     </div>
@@ -203,9 +202,6 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="mt-8 pt-8 border-t border-gray-800 text-center md:text-left">
-        <p class="text-gray-500">© {new Date().getFullYear()} Jack Li. All rights reserved.</p>
       </div>
     </div>
   </footer>
