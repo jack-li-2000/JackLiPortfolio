@@ -23,7 +23,7 @@
   <nav class="backdrop-blur-md bg-gray-900/80 sticky top-0 z-10 border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center py-4">
-        <a href="{base}/" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400"> Data Analyst </a>
+        <a href="{base}/" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Jack Li</a>
         <div class="flex space-x-6">
           <a href="{base}/" class="font-semibold text-gray-300 hover:text-purple-400 transition-colors">Projects</a>
           <a href="{base}/generic" class="font-semibold text-purple-400 transition-colors">About me</a>
