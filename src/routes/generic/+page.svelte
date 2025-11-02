@@ -15,7 +15,7 @@
     </div>
     <div class="text-center px-4 z-10">
       <h1 class="text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">About Me</h1>
-      <p class="text-2xl mb-8 text-gray-200">Data Analyst & Visualization Specialist</p>
+      <p class="text-2xl mb-8 text-gray-200">Data Analyst & Scientist</p>
     </div>
   </section>
 
@@ -23,7 +23,7 @@
   <nav class="backdrop-blur-md bg-gray-900/80 sticky top-0 z-10 border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center py-4">
-        <a href="{base}/" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Data Analyst</a>
+        <!-- <a href="{base}/" class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400"> Home </a> -->
         <div class="flex space-x-6">
           <a href="{base}/" class="font-semibold text-gray-300 hover:text-purple-400 transition-colors">Projects</a>
           <a href="{base}/generic" class="font-semibold text-purple-400 transition-colors">About me</a>
@@ -53,7 +53,7 @@
         <h2 class="text-4xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Hello!</h2>
         <p class="text-gray-300 mb-8 text-center">
           I'm a data analyst with a passion for finding insight and telling stories through data.
-          I have an Honours B.Sc. in Statistics and Computational Cognitive Sciences from the University of Toronto, 
+          I have an Honors B.Sc. in Statistics and Computational Cognitive Sciences from the University of Toronto, 
           and a strong background in Computer Science.
         </p>
         
@@ -85,19 +85,36 @@
       <!-- Experience Section -->
       <div class="mb-12">
         <h2 class="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Experience</h2>
-        <!-- UofT -->
+        <!-- OneDataTree 2 -->
         <div>
-          <h3 class="text-xl font-bold mb-1 text-white">Data Analyst @ OneDataTree</h3>
-          <p class="text-gray-400 mb-4">(2024 – Present, Toronto ON)</p>
+          <h3 class="text-xl font-bold mb-1 text-white">Data Developer Analyst @ OneDataTree</h3>
+          <p class="text-gray-400 mb-4">(04/2025 – Present)</p>
 
           <p class="text-gray-300 mb-4">
-            As a Data Analyst at OneDataTree, I specialize in developing forecasting models, streamline reporting processes, and create data-driven tools to enhance efficiency and insights.
+            As a Data Developer Analyst at OneDataTree, I prioritize the production of data analytics and data management projects. 
+            My main responsibilities include developing financial and customer forecasting models, pushing end to end reporting pipelines, and creating data-driven tools to enhance efficiency and early detection.
           </p>
           
           <ul class="list-disc pl-6 mb-4 text-gray-300">
-            <li>Developed dashboard automation pipeline for data ingestion, processing, and reporting in SQL and Python.</li>
-            <li>Implemented cross-database validation report to maintain data accuracy and reliability between internal and client records in SQL, Python, and Excel.</li>
-            <li>Conducted financial predictive forecasting, classification, and ad hoc analytics.</li>
+            <li>Built and maintained end-to-end data ingestion and dashboard automation pipeline using Python, SQL, and Tableau, slashing daily reporting time commitment by 75% and cutting report-generation errors by 10%.</li>
+            <li>Conducted financial predictive forecasting, leveraging Time Series and Regression analytics with Python, boosting revenue reporting accuracy by 15% and supporting strategic budgeting decisions.</li>
+            <li>Developed and maintained Classification and Customer Lifetime Value model in Python to identify high risk churn profiles, enabling targeted retention campaigns, reducing churn rate by 7%.</li>
+            <li>Developed and deployed an Entity Flow Analysis application tracking revenue, balance, and expenditure for 50+ customer entities.</li>
+          </ul>
+        </div>
+
+        <!-- OneDataTree 1 -->
+        <div>
+          <h3 class="text-xl font-bold mb-1 text-white">Data Reconciliation Analyst @ OneDataTree</h3>
+          <p class="text-gray-400 mb-4">(01/2024 - 04/2025)</p>
+
+          <p class="text-gray-300 mb-4">
+            As a Data Reconciliation Analyst at OneDataTree, I specialize in maintaining data integrity, early detection of issues, and provide insight to product leadership.
+          </p>
+          
+          <ul class="list-disc pl-6 mb-4 text-gray-300">
+            <li>Implemented cross-database validation report to maintain data accuracy and reliability between internal and client records with SQL, Python, and Excel, significantly reducing discrepancies by 43%.</li>
+            <li>Designed and delivered weekly KPI dashboards, providing real-time visibility into revenue, churn, and product usage, enabling leadership to identify and act on emerging trends within 24 hours.</li>
           </ul>
         </div>
         
@@ -108,7 +125,7 @@
           </div> -->
           
           <h3 class="text-xl font-bold mb-1 text-white">Data Science Intern @ Teck Resources</h3>
-          <p class="text-gray-400 mb-4">(2021 – 2022, Vancouver BC)</p>
+          <p class="text-gray-400 mb-4">(08/2021 – 06/2022)</p>
           
           <p class="text-gray-300 mb-4">
             At Teck, I dealt mainly in data processing, cleaning, exploratory analysis, classification and predictive modelling, and feature selection.
@@ -118,18 +135,9 @@
           <div class="mb-6">
             <h4 class="font-semibold italic mb-2 text-purple-300">Machine Failure Classification</h4>
             <ul class="list-disc pl-6 mb-4 text-gray-300">
-              <li>Performed data cleaning, conveyed statistical inferences and exploratory analysis with python and SQL.</li>
-              <li>Retrieved relevant features for classification using forward stepwise, lasso, and elastinet feature selection.</li>
-              <li>Identified equipment failure using classification models validated with F1-score.</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 class="font-semibold italic mb-2 text-purple-300">Engine Life Cycle Prediction</h4>
-            <ul class="list-disc pl-6 mb-4 text-gray-300">
-              <li>Predicted equipment lifecycle, finding trend, best, worst case with regression models.</li>
-              <li>Validated projected engine lifecycle model prediction results with acceptable RMSE and MAPE.</li>
-              <li>Displayed insights with analytics dashboards and visualizations in PowerBI.</li>
+              <li>Performed data cleaning, conveyed statistical inferences, and conducted exploratory analysis with Python and SQL, resulting in a 22% reduction in daily reporting time commitment.</li>
+              <li>Retrieved relevant features for classification using ElasticNet feature selection, improving model precision and reducing overfitting, leading to 16% increase in detection rate.</li>
+              <li>Predicted equipment lifecycle trends to inform replace vs. maintain decisions using regression models, resulting in a 14% reduction in maintenance costs and a 10% increase in equipment uptime.</li>
             </ul>
           </div>
         </div>
