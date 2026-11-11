@@ -85,10 +85,28 @@
       <!-- Experience Section -->
       <div class="mb-12">
         <h2 class="text-4xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Experience</h2>
+        <!-- BestBuy -->
+        <div>
+          <h3 class="text-xl font-bold mb-1 text-white">Intermediate Data Analyst @ BestBuy</h3>
+          <p class="text-gray-400 mb-4">(03/2026 – Present)</p>
+
+          <p class="text-gray-300 mb-4">
+            As a Data Analyst at BestBuy, I prioritize the production of data analytics and data management projects. 
+            My main responsibilities include developing financial and customer forecasting models, pushing end to end reporting pipelines, and creating data-driven tools to enhance efficiency and early detection.
+          </p>
+          
+          <ul class="list-disc pl-6 mb-4 text-gray-300">
+            <li>Optimized SQL queries and data models, maintaining and modernizing critical reports.</li>
+            <li>Conducted customer segment and delivery-feasibility analysis, identifying 18% of remote area customers as newly serviceable based on carrier pricing models, enabling expansion into previously excluded regions and an estimated $5M in revenue through the end of the year.</li>
+            <li>Delivered difference-in-difference analyses across 30+ stores to evaluate register placement to increase mobile device activation revenue during holiday periods.</li>
+            <li>Delivered same-day delivery cost and speed simulation models using local carrier data, identifying contract inefficiencies and informing negotiations.</li>
+          </ul>
+        </div>
+
         <!-- OneDataTree 2 -->
         <div>
           <h3 class="text-xl font-bold mb-1 text-white">Data Developer Analyst @ OneDataTree</h3>
-          <p class="text-gray-400 mb-4">(04/2025 – Present)</p>
+          <p class="text-gray-400 mb-4">(04/2025 – 02/2026)</p>
 
           <p class="text-gray-300 mb-4">
             As a Data Developer Analyst at OneDataTree, I prioritize the production of data analytics and data management projects. 
