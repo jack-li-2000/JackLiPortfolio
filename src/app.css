@@ -1,1 +1,62 @@
 @import 'tailwindcss';
+
+/*
+  Blue-first palette. `brand` leads; the rest are accents that stay in harmony with it.
+
+  brand     blue      primary - headings, primary buttons, glows, focus rings
+  accent    cyan      analogous partner - gradient ends, links, icon hovers
+  highlight amber     complementary pop - small standout CTAs (e.g. Resume)
+  positive  emerald   tertiary accent - tags and skill pills
+  ink       slate     blue-tinted neutrals - page, cards, borders, body copy
+*/
+@theme {
+	--color-brand-50: #eff6ff;
+	--color-brand-100: #dbeafe;
+	--color-brand-200: #bfdbfe;
+	--color-brand-300: #93c5fd;
+	--color-brand-400: #60a5fa;
+	--color-brand-500: #3b82f6;
+	--color-brand-600: #2563eb;
+	--color-brand-700: #1d4ed8;
+	--color-brand-800: #1e40af;
+	--color-brand-900: #1e3a8a;
+	--color-brand-950: #172554;
+
+	--color-accent-50: #ecfeff;
+	--color-accent-100: #cffafe;
+	--color-accent-200: #a5f3fc;
+	--color-accent-300: #67e8f9;
+	--color-accent-400: #22d3ee;
+	--color-accent-500: #06b6d4;
+	--color-accent-600: #0891b2;
+	--color-accent-700: #0e7490;
+	--color-accent-800: #155e75;
+	--color-accent-900: #164e63;
+
+	--color-highlight-100: #fef3c7;
+	--color-highlight-200: #fde68a;
+	--color-highlight-300: #fcd34d;
+	--color-highlight-400: #fbbf24;
+	--color-highlight-500: #f59e0b;
+	--color-highlight-600: #d97706;
+	--color-highlight-700: #b45309;
+
+	--color-positive-100: #d1fae5;
+	--color-positive-200: #a7f3d0;
+	--color-positive-300: #6ee7b7;
+	--color-positive-400: #34d399;
+	--color-positive-500: #10b981;
+	--color-positive-600: #059669;
+	--color-positive-700: #047857;
+}
+
+@layer base {
+	html {
+		color-scheme: dark;
+	}
+
+	::selection {
+		background-color: rgb(37 99 235 / 0.45);
+		color: #f8fafc;
+	}
+}

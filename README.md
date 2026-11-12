@@ -70,6 +70,20 @@ Because the deployed site is served from a subpath, preview a build that matches
 $env:BASE_PATH = '/JackLiPortfolio'; pnpm run build; pnpm run preview
 ```
 
+## Theme palette
+
+Colours live in [src/app.css](src/app.css) as Tailwind v4 `@theme` tokens, so utilities like `bg-brand-500`, `text-accent-300`, `border-highlight-400/40`, and `shadow-brand-500/20` work anywhere:
+
+| Token | Role | Base shade |
+| --- | --- | --- |
+| `brand` | Primary blue — headings, primary buttons, hovers, glows | `#3b82f6` (`brand-500`) |
+| `accent` | Cyan — gradient partner, link/icon hovers, active underline | `#06b6d4` (`accent-500`) |
+| `highlight` | Amber — small standout CTAs such as the Resume pill | `#f59e0b` (`highlight-500`) |
+| `positive` | Emerald — skill pills and tags | `#10b981` (`positive-500`) |
+| `slate` | Blue-tinted neutrals — page, cards, borders, body copy | `slate-950` / `slate-900` |
+
+Headings use `from-sky-200 via-brand-200 to-accent-200`; primary buttons use `from-brand-500 to-accent-500`.
+
 ## Project structure
 
 - `src/routes/` — pages and sections (SvelteKit routes)
