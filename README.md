@@ -89,7 +89,7 @@ Body copy is set in Hanken Grotesk, loaded from Google Fonts in [src/app.html](s
 
 - `src/routes/+page.svelte` — the portfolio page (hero, projects, experience, about, contact)
 - `src/app.css` — global styles for the portfolio page
-- `src/app.html` — document head (metadata, fonts, favicon)
+- `src/app.html` — document head (metadata, fonts, tab icon)
 - `static/` — static assets, including `Jack_li_resume.pdf` and images
 - `svelte.config.js` — adapter and base-path configuration
 - `.github/workflows/deploy.yml` — build and GitHub Pages deployment
