@@ -1,6 +1,6 @@
 # Jack Li — Portfolio
 
-Source for my personal portfolio site, built with SvelteKit and Tailwind CSS and deployed as a static site to GitHub Pages.
+Source for my personal portfolio site, built with SvelteKit and plain CSS and deployed as a static site to GitHub Pages.
 
 - **Live portfolio:** https://jack-li-2000.github.io/JackLiPortfolio/
 - **LinkedIn:** https://www.linkedin.com/in/jack-li-2000/
@@ -72,22 +72,24 @@ $env:BASE_PATH = '/JackLiPortfolio'; pnpm run build; pnpm run preview
 
 ## Theme palette
 
-Colours live in [src/app.css](src/app.css) as Tailwind v4 `@theme` tokens, so utilities like `bg-brand-500`, `text-accent-300`, `border-highlight-400/40`, and `shadow-brand-500/20` work anywhere:
+Colours live in [src/app.css](src/app.css) as custom properties on `:root`:
 
-| Token | Role | Base shade |
+| Token | Role | Value |
 | --- | --- | --- |
-| `brand` | Primary blue — headings, primary buttons, hovers, glows | `#3b82f6` (`brand-500`) |
-| `accent` | Cyan — gradient partner, link/icon hovers, active underline | `#06b6d4` (`accent-500`) |
-| `highlight` | Amber — small standout CTAs such as the Resume pill | `#f59e0b` (`highlight-500`) |
-| `positive` | Emerald — skill pills and tags | `#10b981` (`positive-500`) |
-| `slate` | Blue-tinted neutrals — page, cards, borders, body copy | `slate-950` / `slate-900` |
+| `--paper` | Page background | `#0a131d` |
+| `--surface` / `--surface-2` | Cards and chips | `#0f1b28` / `#152435` |
+| `--line` / `--line-strong` | Borders and dividers | `rgba(160, 190, 220, 0.14)` / `0.3` |
+| `--ink` / `--muted` | Body text and secondary text | `#e9eef4` / `#96a5b7` |
+| `--accent` / `--accent-ink` | Amber highlights, buttons, markers | `#f2a65a` / `#1c1206` |
+| `--sky` | Links | `#8fc0e0` |
 
-Headings use `from-sky-200 via-brand-200 to-accent-200`; primary buttons use `from-brand-500 to-accent-500`.
+Body copy is set in Hanken Grotesk, loaded from Google Fonts in [src/app.html](src/app.html).
 
 ## Project structure
 
-- `src/routes/` — pages and sections (SvelteKit routes)
-- `src/app.css` — global Tailwind styles
+- `src/routes/+page.svelte` — the portfolio page (hero, projects, experience, about, contact)
+- `src/app.css` — global styles for the portfolio page
+- `src/app.html` — document head (metadata, fonts, favicon)
 - `static/` — static assets, including `Jack_li_resume.pdf` and images
 - `svelte.config.js` — adapter and base-path configuration
 - `.github/workflows/deploy.yml` — build and GitHub Pages deployment
