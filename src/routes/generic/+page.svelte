@@ -5,7 +5,7 @@
 
 <div class="min-h-screen bg-gray-900 text-gray-100">
   <!-- Hero Section -->
-  <section class="h-[40vh] sticky top-0 z-0 flex items-center justify-center bg-gradient-to-br from-purple-900 via-indigo-800 to-gray-900 text-white overflow-hidden">
+  <section class="h-[40vh] sticky top-0 z-0 flex items-center justify-center bg-gradient-to-br from-purple-900 via-indigo-800 to-gray-900 text-white overflow-hidden will-change-transform" use:parallax>
     <div class="absolute inset-0 opacity-20">
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(76,29,149,0.25),rgba(15,23,42,0))] blur-xl"></div>
       <div class="grid grid-cols-6 absolute inset-0">
@@ -14,7 +14,7 @@
         {/each}
       </div>
     </div>
-    <div class="text-center px-4 z-10 will-change-transform" use:parallax>
+    <div class="text-center px-4 z-10">
       <h1 class="text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">About Me</h1>
       <p class="text-2xl mb-8 text-gray-200">Data Analyst & Scientist</p>
     </div>

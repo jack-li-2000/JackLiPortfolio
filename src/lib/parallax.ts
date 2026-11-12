@@ -1,18 +1,18 @@
-const DEFAULT_FACTOR = 0.45;
-const MAX_TRAVEL_RATIO = 0.85;
+const DEFAULT_SPEED = 0.7;
 
 /**
- * Scroll-linked parallax for a pinned hero: slides the node down as the page
- * scrolls so the sections that follow rise up and cover it.
+ * Scroll-linked parallax for a pinned hero: the node travels at `speed` times
+ * the scroll speed, so it drifts up the screen slower than the page while the
+ * sections below rise up and cover it.
  */
-export function parallax(node: HTMLElement, factor?: number) {
-  let strength = factor ?? DEFAULT_FACTOR;
+export function parallax(node: HTMLElement, speed?: number) {
+  let rate = speed ?? DEFAULT_SPEED;
   let frame = 0;
 
   const update = () => {
     frame = 0;
-    const distance = Math.min(window.scrollY * strength, window.innerHeight * MAX_TRAVEL_RATIO);
-    node.style.transform = `translate3d(0, ${distance}px, 0)`;
+    const drift = Math.min(Math.max(0, 1 - rate) * window.scrollY, window.innerHeight);
+    node.style.transform = `translate3d(0, ${-drift}px, 0)`;
   };
 
   const request = () => {
@@ -27,7 +27,7 @@ export function parallax(node: HTMLElement, factor?: number) {
 
   return {
     update(next?: number) {
-      strength = next ?? DEFAULT_FACTOR;
+      rate = next ?? DEFAULT_SPEED;
       update();
     },
     destroy() {
