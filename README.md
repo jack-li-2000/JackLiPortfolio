@@ -10,7 +10,7 @@ Source for my personal portfolio site, built with SvelteKit and Tailwind CSS and
 
 The site uses [`@sveltejs/adapter-static`](https://svelte.dev/docs/kit/adapters) and is published by the GitHub Actions workflow in [.github/workflows/deploy.yml](.github/workflows/deploy.yml). Builds are served from the `/JackLiPortfolio` base path, so the site lives at https://jack-li-2000.github.io/JackLiPortfolio/.
 
-Any push to `main` builds the site and deploys it automatically. No manual upload or separate deploy branch is involved.
+CI runs on Node.js 24 with pnpm 10 (matching the `pnpm-lock.yaml` lockfile) and installs dependencies with `--frozen-lockfile`. Any push to `main` builds the site and deploys it automatically; the workflow can also be started manually. No manual upload or separate deploy branch is involved.
 
 ## Redeploying
 
@@ -29,17 +29,17 @@ git push origin main
 
 The workflow runs automatically. You can confirm it under the **Actions** tab of the repository (workflow: "Deploy to GitHub Pages"). When the `deploy` job finishes, the new version is live.
 
-### Option 2: Re-run the last deployment
+### Option 2: Rebuild without a code change
 
-Use this when the site needs to be rebuilt without any code change (for example, a previous run failed or a GitHub Pages setting was fixed):
+Use this when the site needs to be redeployed as-is (for example, a previous run failed or a GitHub Pages setting was fixed):
 
 1. Open the repo's **Actions** tab.
 2. Select **Deploy to GitHub Pages** in the left sidebar.
-3. Open the most recent run and choose **Re-run all jobs** (or **Re-run failed jobs**).
+3. Click **Run workflow** → **Run workflow** for a fresh build of `main`, or open the most recent run and choose **Re-run all jobs** (or **Re-run failed jobs**).
 
 ### Option 3: Deploy a different branch
 
-The workflow only triggers on pushes to `main`. To publish another branch, either merge it into `main`, or temporarily add the branch to the `on.push.branches` list in [.github/workflows/deploy.yml](.github/workflows/deploy.yml) and push that change.
+The workflow triggers on pushes to `main`, but it can also be started manually. To publish another branch, either merge it into `main`, or open **Actions → Deploy to GitHub Pages → Run workflow** and pick that branch (it deploys to the same Pages site).
 
 ### After deploying
 
@@ -49,7 +49,7 @@ The workflow only triggers on pushes to `main`. To publish another branch, eithe
 
 ## Local development
 
-Requires Node.js 20+ and pnpm.
+Requires Node.js `^20` or `>=22` and pnpm 10.34.9. Both are pinned in [package.json](package.json) (`engines` and `packageManager`), and CI uses the same versions.
 
 ```bash
 pnpm install

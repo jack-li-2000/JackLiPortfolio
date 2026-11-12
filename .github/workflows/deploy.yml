@@ -2,41 +2,51 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'main'
+    branches: [main]
+  workflow_dispatch:
+
+# Least privilege by default; the deploy job grants what Pages needs.
+permissions:
+  contents: read
+
+# Queue deployments instead of cancelling one that is already running.
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build_site:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
-      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
+      # pnpm 10 matches the lockfileVersion 9 pnpm-lock.yaml and the
+      # `pnpm.onlyBuiltDependencies` field in package.json.
       - name: Install pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v6
         with:
-          version: 8
+          version: 10
 
       - name: Install Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-            node-version: 20
-            cache: pnpm
+          node-version: 24
+          cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
-      - name: build
+      - name: Build
         env:
-            BASE_PATH: '/${{github.event.repository.name}}'
-        run: |
-            pnpm run build
+          BASE_PATH: '/${{ github.event.repository.name }}'
+        run: pnpm run build
 
       - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
-            # this should match the `pages` option in your adapter-static options
-            path: 'build/'
+          # this should match the `pages` option in your adapter-static options
+          path: 'build/'
 
   deploy:
     needs: build_site
@@ -53,4 +63,4 @@ jobs:
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
