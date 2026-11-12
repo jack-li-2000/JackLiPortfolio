@@ -91,8 +91,9 @@
           <p class="text-gray-400 mb-4">(03/2026 – Present)</p>
 
           <p class="text-gray-300 mb-4">
-            As a Data Analyst at BestBuy, I prioritize the production of data analytics and data management projects. 
-            My main responsibilities include developing financial and customer forecasting models, pushing end to end reporting pipelines, and creating data-driven tools to enhance efficiency and early detection.
+            As an Intermediate Data Analyst at BestBuy, I focus on making our reporting and delivery analytics faster, more reliable, and more useful for decision making.
+            My main responsibilities include developing and optimizing SQL queries and data models behind critical reports, working on new initiatives like evaluating customer segmentation and delivery feasibility to uncover newly serviceable markets,
+            measuring the revenue impact of in-store initiatives through various analyses, and simulating variable logistics metrics to inform carrier contract negotiations.
           </p>
           
           <ul class="list-disc pl-6 mb-4 text-gray-300">
